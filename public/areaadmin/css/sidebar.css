@@ -1,0 +1,111 @@
+div.flex-dashboard{
+
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+}
+
+sidebar{
+
+    display: block;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    height:100%calc(100% - 10%);
+    overflow: auto;
+}
+
+
+
+sidebar .sidebar-title{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 70px;
+
+}
+sidebar .sidebar-title img {
+    height: 60px;
+    width: 40px;
+}
+sidebar .sidebar-title h2{
+    font-size: 15px;
+    margin-top: 5px;
+}
+div.menu{
+
+   
+ 
+}
+div.menu label{
+    color: rgb(114, 112, 112); 
+    text-transform: uppercase;
+}
+div.menu svg{
+color:darkgreen;
+font-size: 15px;
+}
+div.menu label:hover{
+    color: rgb(14, 13, 13);
+    
+}
+
+
+div.menu input {
+    display: none;
+}
+
+div.menu ul{
+
+    list-style-type: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s linear;
+}
+div.menu ul li{
+    max-height: 0;
+    padding: 120 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+
+    
+}
+
+div.menu ul li svg{
+    color:darkgreen;
+    font-size: 15px;
+}
+div.menu ul li a{
+    color: rgb(114, 112, 112);
+    margin-left: 20px;
+    text-decoration: none;
+   
+    
+    padding: 5px;
+    display: block;
+
+}
+div.menu ul li a:hover{
+    color: rgb(14, 13, 13)
+}
+
+
+div.menu input:checked~ul {
+    height: auto;
+    max-height: 200px;
+    transform: all;
+
+}
+
+
+
+
+

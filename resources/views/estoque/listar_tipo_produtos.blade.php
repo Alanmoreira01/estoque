@@ -1,14 +1,15 @@
-@extends('dashboard')
+@extends('painel')
 
-@section('painel')
+@section('content')
 
 
 <div class="panel-row">
 
 
-<h3 >{{$titulo}}</h3><!--teste git-->
+<h3 >{{$titulo}}</h3><!--teste 2 git-->
 @if (Session::has('message'))
 <div class="alert alert-success" role="alert"><center>{{Session::get('message')}}</center></div>
+
 @endif
 
 

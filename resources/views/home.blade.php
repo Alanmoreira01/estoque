@@ -1,5 +1,5 @@
 
-@extends('adminlte::page')
+@extends('painel')
 
 @section('content')
 <div class="container">

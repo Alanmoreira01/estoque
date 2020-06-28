@@ -1,0 +1,22 @@
+
+.flex-dashboard header{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color:#fff;
+    padding: 10px 30px;
+}
+.flex-dashboard header a{
+text-decoration: none;
+color: rgb(114, 112, 112);
+}
+.flex-dashboard header svg{
+    color: darkgreen;
+}
+.flex-dashboard .fa-bars{
+font-size: 18px;
+cursor: pointer;
+}
