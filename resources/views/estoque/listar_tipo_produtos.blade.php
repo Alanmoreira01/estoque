@@ -24,7 +24,7 @@
 
     <form action="{{url('/doadores/pesquisa')}}" method="get">
 
-        <button class="btn btn-info" type="submit">Pesquisar</button>
+        <button class="btn btn-info pesquisar" type="submit">Pesquisar</button>
 
         <div class="col-lg-6">
             <input class="form-control" name="palavraChave" type="text" placeholder="Digite o Nome"/>
@@ -74,7 +74,7 @@
     </tr>
 
     @empty
-    <p>Nenhum Item  de Estoque cadastrado</p>
+    <p>Nenhum Tipo Produto cadastrado</p>
     @endforelse
 
 
@@ -84,7 +84,7 @@
 <br><br><div class="divider"></div> <br><br>
 <center>
     <a href="{{url('/')}}"   class="btn btn-danger"   >Cancelar</a>
-    <a href="{{url('/tipo+produto/relatorio')}}"   class="btn btn-primary"   >Relatório</a>
+    <a href="{{url('/tipo_produto/relatorio')}}"   class="btn btn-primary"   >Relatório</a>
 </center>
 
 </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::get('/tipo_prod_listar', 'HomeController@index')->name('home');
+Route::get('/tipo_prod_listar', 'TipoProdutoController@index');

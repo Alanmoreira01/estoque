@@ -28,7 +28,7 @@
 <ul>
    <li>
        <i class="fab fa-ubuntu"></i>
-       <a href="{{url('/usuarios/listar')}}">Listar tipo Produto</a>
+       <a href="{{url('/tipo_prod_listar')}}">Listar tipo Produto</a>
    </li>
    <li>
        <i class="fab fa-fedora"></i>

@@ -14,7 +14,10 @@ class TipoProdutoController extends Controller
      */
     public function index()
     {
-        //
+        $titulo = 'Lista de Tipo Produtos';
+        $tipo_produtos = TipoProduto::paginate(5);
+
+        return view('estoque/listar_tipo_produtos', compact('tipo_produtos', 'titulo'));
     }
 
     /**
