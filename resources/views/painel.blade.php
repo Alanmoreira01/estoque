@@ -24,11 +24,11 @@
         <div class="menu">
             <i class="fab fa-ubuntu"></i>
            <input type="checkbox" id="chec1">
-           <label class="l" for="chec1">Menu</label>
+           <label class="l" for="chec1">TIPO PRODUTO</label>
 <ul>
    <li>
        <i class="fab fa-ubuntu"></i>
-       <a href="#">Administrativo</a>
+       <a href="{{url('/usuarios/listar')}}">Listar tipo Produto</a>
    </li>
    <li>
        <i class="fab fa-fedora"></i>
