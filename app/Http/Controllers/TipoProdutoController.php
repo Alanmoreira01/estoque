@@ -27,7 +27,8 @@ class TipoProdutoController extends Controller
      */
     public function create()
     {
-        //
+        $titulo = 'Lista de Tipo Produtos';
+          return view('estoque/cadastro_editar_tipo_produtos', compact( 'titulo'));
     }
 
     /**

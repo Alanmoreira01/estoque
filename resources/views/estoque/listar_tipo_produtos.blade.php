@@ -25,7 +25,7 @@
     <div class="col-md-10 " style="float: right">
     <form action="{{url('/doadores/pesquisa')}}" method="get">
         <div class="col-md-2" style="float: right">
-        <button class="btn btn-info" type="submit"><i class="fas fa-save" aria-hidden="true"></i></button>
+        <button class="btn btn-info" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
         </div>
 <div class="col-md-8" style="float: right">
     <input class="form-control" name="palavraChave" type="text" placeholder="Digite o Nome"/>
@@ -73,7 +73,7 @@
         </td>
         <td>
             <a href="" class="delete"onclick="acaoBotao()" >
-                <i class="fas fa-delete" aria-hidden="true"></i>
+                <i class="far fa-trash-alt" aria-hidden="true"></i>
             </a>
         </td>
     </tr>
