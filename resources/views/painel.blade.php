@@ -15,10 +15,10 @@
 
 <div class="flex-dashboard">
     <sidebar id="sidebar">
-        <p>sidebar</p>
+<br>
         <div class="sidebar-title">
 <img src="areaadmin/imagens/logo.png"/>
-<h2>Titulo Sidebar</h2>
+<h2>Sistema Estoque</h2>
         </div>
 
         <div class="menu">
@@ -156,7 +156,7 @@
 
             </header>
             <div  class="main-content" >
-                <p>content</p>
+
 
                 @yield('content')
 

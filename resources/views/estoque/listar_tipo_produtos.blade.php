@@ -20,18 +20,21 @@
             <a href="{{url('/doadores/cadastrar')}}" class="btn btn-success"  value="Novo Cadastro" >Novo</a>
 
         </form>
-    </div>
+    </div>&nbsp;
 
+    <div class="col-md-10 " style="float: right">
     <form action="{{url('/doadores/pesquisa')}}" method="get">
-
-        <button class="btn btn-info pesquisar" type="submit">Pesquisar</button>
-
-        <div class="col-lg-6">
-            <input class="form-control" name="palavraChave" type="text" placeholder="Digite o Nome"/>
+        <div class="col-md-2" style="float: right">
+        <button class="btn btn-info" type="submit"><i class="fas fa-save" aria-hidden="true"></i></button>
         </div>
+<div class="col-md-8" style="float: right">
+    <input class="form-control" name="palavraChave" type="text" placeholder="Digite o Nome"/>
+</div>
+
+
 
     </form>
-
+    </div>
 
 
 </div><br><br>
@@ -56,19 +59,21 @@
 
 
         <td>
-            <a href="}}" class="imprimir" >
+            <a href="" class="imprimir" >
                 <i class="fa fa-print" aria-hidden="true"></i>
-            </a>
-        </td>
-        <td>
-            <a  href="" class="editar">
-                <i class="fab pencil" aria-hidden="true"></i>
+
 
             </a>
         </td>
         <td>
+            <a  href="" class="editar">
+
+                <i class="fas fa-edit" aria-hidden="true"></i>
+            </a>
+        </td>
+        <td>
             <a href="" class="delete"onclick="acaoBotao()" >
-                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                <i class="fas fa-delete" aria-hidden="true"></i>
             </a>
         </td>
     </tr>
