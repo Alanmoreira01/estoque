@@ -5,6 +5,21 @@ namespace App\Http\Controllers;
 use App\TipoProduto;
 use Illuminate\Http\Request;
 
+
+
+use Mail;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\Controller;
+
+
+
+use Barryvdh\DomPDF\Facade as PDF;
+
+
+use Session;
+use Illuminate\Support\Facades\Validator;
+
+
 class TipoProdutoController extends Controller
 {
     /**
@@ -27,7 +42,7 @@ class TipoProdutoController extends Controller
      */
     public function create()
     {
-        $titulo = 'Lista de Tipo Produtos';
+        $titulo = 'Cadastro de Tipo Produtos';
           return view('estoque/cadastro_editar_tipo_produtos', compact( 'titulo'));
     }
 
@@ -39,7 +54,28 @@ class TipoProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $tipo_produto = $request->all();
+
+        $messages = [
+            'ds_tipo_produto.required' => 'Campo Nome do Tipo Produto é de preenchimento obrigatório!',
+
+            '' => '',
+        ];
+
+
+
+
+        $validacao = Validator::make($tipo_produto, TipoProduto::$rules, $messages);
+        if ($validacao->fails()) {
+            return redirect::to('/tipo_prod_cadastrar')
+                            ->withErrors($validacao)
+                            ->withInput();
+        }
+
+
+       TipoProduto::create($tipo_produto);
+
+        return redirect('/tipo_prod_listar')->with('message', 'Salvo com Sucesso!');
     }
 
     /**

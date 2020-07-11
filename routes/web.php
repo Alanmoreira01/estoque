@@ -26,3 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/tipo_prod_listar', 'TipoProdutoController@index');
 Route::get('/tipo_prod_cadastrar', 'TipoProdutoController@create');
+Route::post('/tipo_prod/salvar', 'TipoProdutoController@store');
+

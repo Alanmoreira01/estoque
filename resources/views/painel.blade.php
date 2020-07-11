@@ -32,7 +32,7 @@
    </li>
    <li>
        <i class="fab fa-fedora"></i>
-       <a href="#">Expedição</a>
+       <a href="{{url('/tipo_prod_cadastrar')}}">Cadastro tipo Produto</a>
    </li>
    <li>
        <i class="fab fa-suse"></i>

@@ -6,7 +6,7 @@
 <div class="panel-row">
 
 
-<h3 >{{$titulo}}</h3><!--teste 2 git-->
+<h5 >{{$titulo}}</h5><!--teste 2 git-->
 @if (Session::has('message'))
 <div class="alert alert-success" role="alert"><center>{{Session::get('message')}}</center></div>
 
@@ -17,7 +17,7 @@
 <div class="col-md-12">
     <div class="col-md-2">
         <form class="form-login form-inline">
-            <a href="{{url('/doadores/cadastrar')}}" class="btn btn-success"  value="Novo Cadastro" >Novo</a>
+            <a href="{{url('/tipo_prod_cadastrar')}}" class="btn btn-success"  value="Novo Cadastro" >Novo</a>
 
         </form>
     </div>&nbsp;
